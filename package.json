@@ -1,0 +1,19 @@
+{
+  "name": "playwright-ai-autodebug",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.48.2",
+    "allure-js-commons": "^3.0.6",
+    "allure-playwright": "^3.0.6"
+  },
+  "dependencies": {
+    "playwright-ai-auto-debug": "^3.2.3"
+  }
+}
