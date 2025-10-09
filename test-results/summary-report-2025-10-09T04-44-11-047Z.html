@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отчет по дефектам - 09.10.2025, 07:44:10</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; padding: 16px; background: #f8fafc; color: #334155; }
+        .container { max-width: 900px; margin: 0 auto; }
+        .header { background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white; padding: 20px; border-radius: 12px; margin-bottom: 20px; }
+        .header h1 { margin: 0; font-size: 1.75rem; font-weight: 600; }
+        .header p { margin: 8px 0 0 0; opacity: 0.9; font-size: 0.9rem; }
+        
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 20px; }
+        .stat { background: white; padding: 16px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .stat-value { font-size: 1.5rem; font-weight: 700; color: #3b82f6; }
+        .stat-label { font-size: 0.8rem; color: #64748b; margin-top: 4px; }
+        
+        .section { background: white; border-radius: 8px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .section h2 { margin: 0 0 16px 0; font-size: 1.25rem; font-weight: 600; color: #1e293b; }
+        
+        .error-types { display: flex; flex-wrap: wrap; gap: 8px; }
+        .error-type { background: #f1f5f9; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; }
+        .error-type .count { background: #3b82f6; color: white; padding: 2px 6px; border-radius: 4px; margin-left: 6px; font-weight: 600; }
+        
+        .recommendations { background: #eff6ff; border-left: 4px solid #3b82f6; padding: 16px; border-radius: 0 8px 8px 0; }
+        .recommendations ul { margin: 0; padding-left: 20px; }
+        .recommendations li { margin-bottom: 6px; font-size: 0.9rem; }
+        
+        .results-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+        .results-table th { background: #f8fafc; padding: 10px 8px; text-align: left; font-weight: 600; border-bottom: 2px solid #e2e8f0; }
+        .results-table td { padding: 8px; border-bottom: 1px solid #e2e8f0; }
+        .results-table tr:hover { background: #f8fafc; }
+        
+        .severity-high { color: #dc2626; font-weight: 600; }
+        .severity-medium { color: #d97706; font-weight: 600; }
+        .severity-low { color: #059669; font-weight: 600; }
+        .confidence-high { color: #059669; }
+        .confidence-medium { color: #d97706; }
+        .confidence-low { color: #dc2626; }
+        
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: 500; }
+        .badge-success { background: #dcfce7; color: #166534; }
+        .badge-warning { background: #fef3c7; color: #92400e; }
+        .badge-error { background: #fecaca; color: #991b1b; }
+        
+        @media (max-width: 640px) {
+            .stats { grid-template-columns: repeat(2, 1fr); }
+            .results-table { font-size: 0.8rem; }
+            .results-table th, .results-table td { padding: 6px 4px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 Отчет по дефектам</h1>
+            <p>Сгенерирован: 09.10.2025, 07:44:10</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">1</div>
+                <div class="stat-label">Всего</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">1</div>
+                <div class="stat-label">Обработано</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">100%</div>
+                <div class="stat-label">Успех</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">70%</div>
+                <div class="stat-label">Уверенность ИИ</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">0</div>
+                <div class="stat-label">Действий</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">0</div>
+                <div class="stat-label">Рекомендаций</div>
+            </div>
+        </div>
+
+        
+        <div class="section">
+            <h2>🔥 Типы ошибок</h2>
+            <div class="error-types">
+                
+                    <div class="error-type">
+                        NAVIGATION<span class="count">1</span>
+                    </div>
+                
+            </div>
+        </div>
+        
+
+        
+        <div class="section">
+            <h2>💡 Рекомендации</h2>
+            <div class="recommendations">
+                <ul>
+                    <li>Наиболее частая ошибка "NAVIGATION" - рассмотрите возможность улучшения тестовых сценариев для этого типа</li><li>Регулярно анализируйте отчеты для выявления паттернов в ошибках</li><li>Используйте MCP интеграцию для получения более точного контекста DOM</li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="section">
+            <h2>📋 Результаты (1)</h2>
+            <div style="overflow-x: auto;">
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Файл</th>
+                            <th>Тип</th>
+                            <th>Критичность</th>
+                            <th>ИИ</th>
+                            <th>Действия</th>
+                            <th>Время</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                            <tr>
+                                <td>
+                                    <div style="font-weight: 600; color: #1e293b;">sample always fails</div>
+                                    <div style="font-size: 0.75rem; color: #64748b; margin-top: 2px;" title="/home/rattus-aristarchus/code/playwright-ai-demo-2/test-results/sample-always-fails-chromium/error-context.md">sample-always-fails-chromium</div>
+                                </td>
+                                <td><span class="badge badge-warning">NAVIGATION</span></td>
+                                <td class="severity-LOW">LOW</td>
+                                <td class="confidence-medium">70%</td>
+                                <td>0</td>
+                                <td>2.7s</td>
+                            </tr>
+                            
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        
+        
+        <div style="text-align: center; padding: 20px; color: #64748b; font-size: 0.8rem;">
+            Сгенерировано playwright-ai-auto-debug
+        </div>
+    </div>
+</body>
+</html>

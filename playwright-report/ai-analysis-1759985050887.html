@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Анализ Ошибок Тестов</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 20px; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header { text-align: center; margin-bottom: 30px; }
+        .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 30px; }
+        .stat-card { background: #f8f9fa; padding: 15px; border-radius: 6px; text-align: center; }
+        .success { border-left: 4px solid #28a745; }
+        .error { border-left: 4px solid #dc3545; }
+        .result-item { margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 6px; }
+        .result-header { font-weight: bold; margin-bottom: 10px; }
+        .ai-response { background: #f8f9fa; padding: 15px; border-radius: 4px; margin-top: 10px; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 4px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 AI Анализ Ошибок Тестов</h1>
+            <p>Отчет создан: 2025-10-09T04:44:10.890Z</p>
+        </div>
+        
+        <div class="summary">
+            <div class="stat-card success">
+                <h3>✅ Успешно</h3>
+                <div style="font-size: 24px; font-weight: bold;">1</div>
+            </div>
+            <div class="stat-card error">
+                <h3>❌ Ошибок</h3>
+                <div style="font-size: 24px; font-weight: bold;">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>📊 Всего</h3>
+                <div style="font-size: 24px; font-weight: bold;">1</div>
+            </div>
+        </div>
+        
+        <div class="results">
+            
+                <div class="result-item success">
+                    <div class="result-header">
+                        ✅ Файл 1: /home/rattus-aristarchus/code/playwright-ai-demo-2/test-results/sample-always-fails-chromium/error-context.md
+                    </div>
+                    
+                        <p><strong>Тест:</strong> test results</p>
+                        <p><strong>Тип ошибки:</strong> NAVIGATION</p>
+                    
+                    
+                        <div class="ai-response">
+                            <h4>🤖 AI Рекомендации:</h4>
+                            <pre>appears to be a structured representation of a web page, possibly using a markup language like YAML. The page seems to be a list of links, each leading to a different example on a website named "the-internet". Here's a brief overview of some of the links:
+
+1. Fork me on GitHub: Links to the GitHub repository of the-internet.
+2. A/B Testing: Leads to a page for A/B testing examples.
+3. Add/Remove Elements: Leads to a page for adding and removing elements.
+4. Basic Auth: Leads to a page requiring basic authentication with username and password "admin".
+5. Broken Images: Leads to a page with broken images.
+6. Challenging DOM: Leads to a page with a challenging DOM structure.
+7. Checkboxes: Leads to a page with checkboxes.
+8. Context Menu: Leads to a page with a context menu.
+9. Digest Authentication: Leads to a page requiring digest authentication with username and password "admin".
+10. Disappearing Elements: Leads to a page with elements that disappear and reappear.
+11. Drag and Drop: Leads to a page for drag and drop examples.
+12. Dropdown: Leads to a page with dropdown menus.
+13. Dynamic Content: Leads to a page with dynamic content.
+
+The structure also includes headings, lists, and other elements commonly found in web pages. However, the content is truncated, so there might be more links and elements on the actual page.</pre>
+                        </div>
+                    
+                    
+                </div>
+            
+        </div>
+    </div>
+</body>
+</html>

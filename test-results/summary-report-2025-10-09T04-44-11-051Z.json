@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "generatedAt": "2025-10-09T04:44:10.975Z",
+    "totalResults": 1,
+    "successfulResults": 1,
+    "failedResults": 0,
+    "uniqueTestFiles": 1,
+    "reportVersion": "1.0.0"
+  },
+  "summary": {
+    "successRate": 100,
+    "averageConfidence": 70,
+    "totalActions": 0,
+    "totalRecommendations": 0,
+    "averageProcessingTime": 2666
+  },
+  "statistics": {
+    "errorTypes": {
+      "NAVIGATION": 1
+    },
+    "severities": {
+      "LOW": 1
+    },
+    "aiModels": {
+      "mistral-tiny": 1
+    }
+  },
+  "topIssues": {
+    "mostCommonErrors": [
+      {
+        "type": "NAVIGATION",
+        "count": 1
+      }
+    ],
+    "highSeverityIssues": 0,
+    "lowConfidenceResults": 0
+  },
+  "recommendations": [
+    "Наиболее частая ошибка \"NAVIGATION\" - рассмотрите возможность улучшения тестовых сценариев для этого типа",
+    "Регулярно анализируйте отчеты для выявления паттернов в ошибках",
+    "Используйте MCP интеграцию для получения более точного контекста DOM"
+  ],
+  "detailedResults": [
+    {
+      "testFile": "/home/rattus-aristarchus/code/playwright-ai-demo-2/test-results/sample-always-fails-chromium/error-context.md",
+      "errorType": "NAVIGATION",
+      "severity": "LOW",
+      "confidence": 0.7,
+      "actionsCount": 0,
+      "recommendationsCount": 0,
+      "aiModel": "mistral-tiny",
+      "processingTime": 2666,
+      "timestamp": "2025-10-09T04:44:10.975Z",
+      "success": true
+    }
+  ],
+  "failedResults": []
+}

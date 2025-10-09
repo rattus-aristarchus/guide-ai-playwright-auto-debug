@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "generatedAt": "2025-10-09T04:42:52.069Z",
+    "sessionId": "session-1759984960596",
+    "totalSessions": 1
+  },
+  "summary": {
+    "totalTests": 1,
+    "totalPages": 0,
+    "totalElements": 0,
+    "coveredElements": 0,
+    "uncoveredElements": 0,
+    "coveragePercentage": 0,
+    "totalSelectors": 0,
+    "sessionDuration": 11476
+  },
+  "currentSession": {
+    "id": "session-1759984960596",
+    "startTime": 1759984960596,
+    "tests": [
+      {
+        "name": "always fails",
+        "pages": [],
+        "elements": [],
+        "selectors": [],
+        "interactions": [],
+        "startTime": 1759984961556,
+        "endTime": 1759984971802,
+        "status": "failed"
+      }
+    ],
+    "totalTests": 1,
+    "passedTests": 0,
+    "failedTests": 0,
+    "endTime": 1759984972069,
+    "duration": 11473
+  },
+  "pageAnalysis": [],
+  "testAnalysis": [
+    {
+      "testName": "always fails",
+      "status": "failed",
+      "pagesVisited": 0,
+      "selectorsUsed": 0,
+      "uniqueSelectors": 0,
+      "interactions": 0,
+      "duration": 0,
+      "runs": 1,
+      "pages": [],
+      "mostUsedSelectors": []
+    }
+  ],
+  "selectorAnalysis": [],
+  "uncoveredElements": [],
+  "recommendations": [
+    {
+      "type": "coverage",
+      "priority": "high",
+      "message": "🔴 Очень низкое покрытие (0%) - критически важно добавить тесты"
+    },
+    {
+      "type": "tests",
+      "priority": "medium",
+      "message": "📝 1 тестов используют мало селекторов"
+    }
+  ],
+  "drillDown": {
+    "testsByPage": {},
+    "elementsByTest": {
+      "always fails": []
+    },
+    "selectorsByTest": {
+      "always fails": []
+    },
+    "pagesByTest": {
+      "always fails": []
+    }
+  }
+}

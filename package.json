@@ -1,19 +1,22 @@
 {
-  "name": "playwright-ai-autodebug",
+  "name": "playwright",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "playwright test"
+    "test": "playwright test",
+    "test:coverage": "npx playwright test && echo \"📊 Отчет: test-coverage-reports/index.html\"",
+    "coverage:open": "open test-coverage-reports/index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.48.2",
-    "allure-js-commons": "^3.0.6",
-    "allure-playwright": "^3.0.6"
+    "allure-js-commons": "^3.4.1",
+    "allure-playwright": "^3.4.1"
   },
   "dependencies": {
-    "playwright-ai-auto-debug": "^3.2.3"
+    "playwright-ai-auto-debug": "^3.2.4"
   }
 }

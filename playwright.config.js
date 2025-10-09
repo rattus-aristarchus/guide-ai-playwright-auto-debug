@@ -1,4 +1,4 @@
-const { devices, defineConfig } = require("@playwright/test");
+import { defineConfig, devices } from "@playwright/test";
 
 export default defineConfig({
   testDir: "./test",
@@ -7,7 +7,7 @@ export default defineConfig({
     [
       "allure-playwright",
       {
-        resultsDir: "./out/allure-results",
+        resultsDir: "./allure-results",
         environmentInfo: {
           node_version: process.version,
         },

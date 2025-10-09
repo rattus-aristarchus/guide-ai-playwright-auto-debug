@@ -1,1 +1,0 @@
-{"name":"Allure Report","stats":{"total":1,"new":1,"passed":1},"status":"passed","createdAt":1757492129921,"duration":79,"plugin":"Classic","newTests":[{"id":"29d2f0d9d19cd44cb16f3f963a7dca29","name":"sample test","status":"passed","duration":79}],"flakyTests":[],"retryTests":[]}
