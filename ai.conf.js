@@ -21,7 +21,8 @@ export const ai_conf = {
       'error.txt',
       'test-error.md',
       '*-error.txt',
-      '*-error.md'
+      '*-error.md',
+      '*-result.json'
     ],
   
     save_ai_responses: true,
