@@ -1,5 +1,5 @@
 import * as allure from "allure-js-commons";
-import { test, expect } from "../coverage-lib/fixture.js";
+import { test, expect } from "@playwright/test";
 
 test("sample test", async () => {
   await allure.links(...[{ url: "https://example.org"}]);
@@ -15,11 +15,12 @@ test("sample test", async () => {
 });
 
 test("always fails", async ({ page }) => {
-  await allure.links(...[{ url: "https://example.org"}]);
-  await allure.owner("John Doe");
-
-  await page.goto('https://the-internet.herokuapp.com');
-  await allure.step("fail on purpose", async () => {
-    await expect(page).toHaveURL(/forsureisntthere/);
+  await test.step('Navigate to page', async () => {
+    await page.goto('https://playwright.dev');
+  });
+  
+  await test.step('Check wrong title', async () => {
+    // Намеренная ошибка: проверяем неправильный заголовок
+    await expect(page).toHaveTitle('This should break the test');
   });
 });
